@@ -49,14 +49,14 @@ The function takes the following steps:
 
 This is a result of that function:
 
-![Chessboard calibration](writeup_images/chessboard_calibration.png)
+![Chessboard calibration](writeup_images/chessboard_calibration.PNG)
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![Image undistortion](writeup_images/image_undistorted.png)
+![Image undistortion](writeup_images/image_undistorted.PNG)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image. Provide an example of a binary image result.
 
@@ -64,7 +64,7 @@ The first step was converting all the images to grayscale. (Code found in the no
 
 This produces the following result:
 
-![Grayscale conversion](writeup_images/image_gray.png)
+![Grayscale conversion](writeup_images/image_gray.PNG)
 
 After that, I applied Sobel and gradients to the image and used those to apply thresholding to get a binary image. (Code found in the notebook at 2.4: Thresholding)
 
@@ -78,7 +78,7 @@ The next step was transforming the image to a birds eye view.  (Code found in th
 
 This produces the following result:
 
-![Perspective transformation](writeup_images/image_perspective.png)
+![Perspective transformation](writeup_images/image_perspective.PNG)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -86,7 +86,7 @@ The first step in identifying the lane lines is getting a histogram on our thres
 
 This was done in the function get_histograms and the output looks like this:
 
-![Histogram](writeup_images/image_histogram.png)
+![Histogram](writeup_images/image_histogram.PNG)
 
 The next step was using a sliding window technique to identify the lane pixels. (Code found in the notebook at 4.2: Sliding window)
 
@@ -100,7 +100,7 @@ Finally the function returns an image that has the pixels of the lane in red, th
 
 The output image looks like this:
 
-![Sliding window](writeup_images/image_window.png)
+![Sliding window](writeup_images/image_window.PNG)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
