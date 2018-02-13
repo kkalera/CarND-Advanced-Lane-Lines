@@ -5,7 +5,7 @@ We are given images and video's, taken from a camera in the center of a car. Fro
 
 The code I implemented can be found here:
 
-https://github.com/kkalera/CarND-Advanced-Lane-Lines/blob/master/Untitled.ipynb
+https://github.com/kkalera/CarND-Advanced-Lane-Lines/blob/master/Advanced_lane_finding.ipynb
 
 This code works good on the project video, but fails on the challenge video's. I'm going to try and implement a few different approaches to solving this at a later time.
 
